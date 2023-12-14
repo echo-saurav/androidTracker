@@ -10,3 +10,8 @@ User can track each other with this apps
 # Here are some screenshots
 
 <img src="./images/one.png" width=50%>
+<img src="./images/two.png" width=50%>
+<img src="./images/three.png" width=50%>
+<img src="./images/four.png" width=50%>
+<img src="./images/five.png" width=50%>
+<img src="./images/six.png" width=50%>
