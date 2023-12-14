@@ -14,4 +14,3 @@ User can track each other with this apps
 <img src="./images/three.png" width=50%>
 <img src="./images/four.png" width=50%>
 <img src="./images/five.png" width=50%>
-<img src="./images/six.png" width=50%>
