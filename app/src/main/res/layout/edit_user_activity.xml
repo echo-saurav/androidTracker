@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/title"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Edit Profile"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/select_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/image_view"
+                android:src="@mipmap/ic_launcher_round"/>
+            <ImageView
+                android:background="@android:color/white"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/cam_icon"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"/>
+        <EditText
+            android:textColor="@android:color/black"
+            android:drawableStart="@drawable/profile_icon"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_edit_text"
+            android:id="@+id/user_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User name" />
+        <TextView
+            android:textSize="17dp"
+            android:textStyle="normal"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"/>
+        <EditText
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/email_icon"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_edit_text"
+            android:focusable="false"
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"/>
+        <TextView
+            android:textSize="17dp"
+            android:textStyle="normal"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"/>
+        <EditText
+            android:textColor="@android:color/black"
+            android:drawableStart="@drawable/info_icon"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_edit_text"
+            android:id="@+id/user_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description of users"/>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_design"
+        android:layout_alignParentBottom="true"
+        android:text="Save info"
+        android:id="@+id/save_edit_user_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

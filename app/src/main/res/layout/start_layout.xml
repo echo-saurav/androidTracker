@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <TextView
+        android:textColor="@android:color/black"
+        android:drawableTint="@color/colorAccent"
+        android:drawableTop="@drawable/error_icon"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nothing to show, please request user to track"
+        tools:targetApi="m" />
+</RelativeLayout>

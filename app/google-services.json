@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "943574342681",
+    "project_id": "privacytracker-2f3d2",
+    "storage_bucket": "privacytracker-2f3d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943574342681:android:0064dd791fe072165dde88",
+        "android_client_info": {
+          "package_name": "com.ironman.tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7g73371tl4I-kam2R8_Mkl_s727zO5Mk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

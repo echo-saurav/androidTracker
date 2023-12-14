@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Home"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_marginBottom="10dp"
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:drawableTint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:drawableStart="@drawable/info_icon"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:id="@+id/request_recycle_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" New Requests"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/request_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_marginBottom="10dp"
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:drawableTint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:drawableStart="@drawable/profile_icon"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:id="@+id/user_recycle_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Your followed users"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/users_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:visibility="invisible" layout="@layout/start_layout" android:id="@+id/start_message"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        app:elevation="20dp"
+        android:id="@+id/add_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/add_icon" />
+
+</RelativeLayout>
