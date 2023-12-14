@@ -8,7 +8,7 @@ User can track each other with this apps
  - Upload their profile picture
 
 # Here are some screenshots
-![](./images/one.png =100x20)
+![](./images/one.png|width=100)
 ![](./images/two.png)
 ![](./images/three.png)
 ![](./images/four.png)
